@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab_10.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0_sim_netlist.v" \
+"../../../../lab_10.srcs/sources_1/new/Driver_HDMI.v" \
+"../../../../lab_10.srcs/sources_1/new/clockdown.v" \
+"../../../../lab_10.srcs/sources_1/new/decide.v" \
+"../../../../lab_10.srcs/sources_1/new/key.v" \
+"../../../../lab_10.srcs/sources_1/new/lab_10.v" \
+"../../../../lab_10.srcs/sources_1/new/newblock.v" \
+"../../../../lab_10.srcs/sources_1/new/next.v" \
+"../../../../lab_10.srcs/sources_1/new/remove.v" \
+"../../../../lab_10.srcs/sources_1/new/turn_to_rgb.v" \
+"../../../../lab_10.srcs/sim_1/new/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,3 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance testbench.abc.rgb2dvi.U0.ClockGenInternal.ClockGenX.GenPLL.DVI_ClkGenerator are not same.

@@ -1,0 +1,16 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sim_1/new/testbench.v,1596290873,verilog,,,,testbench,,,,,,,,
+E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v,1596291636,verilog,,E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/Driver_HDMI.v,,clk_wiz_0;clk_wiz_0_clk_wiz_0_clk_wiz,,,../../../../lab_10.srcs/sources_1/ip/clk_wiz_0,,,,,
+E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0_sim_netlist.v,1596185422,verilog,,E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/Driver_HDMI.v,,glbl;rgb2dvi_0;rgb2dvi_0_ClockGen;rgb2dvi_0_OutputSERDES;rgb2dvi_0_OutputSERDES_0;rgb2dvi_0_OutputSERDES_2;rgb2dvi_0_OutputSERDES_4;rgb2dvi_0_ResetBridge;rgb2dvi_0_ResetBridge_5;rgb2dvi_0_SyncAsync;rgb2dvi_0_SyncAsync_6;rgb2dvi_0_SyncAsync__parameterized1;rgb2dvi_0_TMDS_Encoder;rgb2dvi_0_TMDS_Encoder_1;rgb2dvi_0_TMDS_Encoder_3;rgb2dvi_0_rgb2dvi,,,,,,,,
+E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/Driver_HDMI.v,1596211946,verilog,,E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/clockdown.v,,Driver_HDMI,,,,,,,,
+E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/clockdown.v,1596288624,verilog,,E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v,,clockdown,,,,,,,,
+E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v,1596335233,verilog,,E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/key.v,,decide,,,,,,,,
+E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/key.v,1596247266,verilog,,E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v,,key,,,,,,,,
+E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v,1596335534,verilog,,E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/newblock.v,,lab_10,,,,,,,,
+E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/newblock.v,1596278564,verilog,,E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/next.v,,newblock,,,,,,,,
+E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/next.v,1596333465,verilog,,E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/remove.v,,next,,,,,,,,
+E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/remove.v,1596278429,verilog,,E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/turn_to_rgb.v,,remove,,,,,,,,
+E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/turn_to_rgb.v,1596262089,verilog,,E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sim_1/new/testbench.v,,turn_to_rgb,,,,,,,,

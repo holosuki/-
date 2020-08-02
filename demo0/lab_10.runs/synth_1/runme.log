@@ -1,0 +1,1100 @@
+
+*** Running vivado
+    with args -log lab_10.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab_10.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source lab_10.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'e:/UNIVERSITY/Vivado/SEA-master/Examples/FPGA-IP/Mini-HDMI-IP'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'e:/UNIVERSITY/Vivado/SEA-master/Examples/FPGA_IP/Mini-HDMI-IP/IP'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/UNIVERSITY/alltext/sea/SEA-master/Examples/FPGA-IP/Mini-HDMI-IP/IP/RGB2DVI_IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/UNIVERSITY/chengxu/vivado2018/Vivado/2018.3/data/ip'.
+Command: synth_design -top lab_10 -part xc7s15ftgb196-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s15'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7136 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 467.578 ; gain = 103.215
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lab_10' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clockdown' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/clockdown.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clockdown' (1#1) [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/clockdown.v:23]
+INFO: [Synth 8-6157] synthesizing module 'key' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/key.v:23]
+WARNING: [Synth 8-6014] Unused sequential element clk1_reg was removed.  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/key.v:52]
+WARNING: [Synth 8-6014] Unused sequential element clk2_reg was removed.  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/key.v:65]
+INFO: [Synth 8-4471] merging register 'left_out_reg' into 'right_out_reg' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/key.v:67]
+WARNING: [Synth 8-6014] Unused sequential element left_out_reg was removed.  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/key.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'key' (2#1) [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/key.v:23]
+INFO: [Synth 8-6157] synthesizing module 'newblock' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/newblock.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'newblock' (3#1) [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/newblock.v:22]
+INFO: [Synth 8-6157] synthesizing module 'next' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/next.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/next.v:33]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/next.v:59]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/next.v:85]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/next.v:111]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/next.v:137]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/next.v:163]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/next.v:197]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/next.v:365]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/next.v:553]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/next.v:710]
+WARNING: [Synth 8-5788] Register j_1_reg in module next is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/next.v:60]
+WARNING: [Synth 8-5788] Register j0_reg in module next is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/next.v:86]
+WARNING: [Synth 8-5788] Register j1_reg in module next is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/next.v:112]
+WARNING: [Synth 8-5788] Register j2_reg in module next is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/next.v:138]
+WARNING: [Synth 8-5788] Register j3_reg in module next is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/next.v:164]
+WARNING: [Synth 8-5788] Register new_j_1_reg in module next is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/next.v:191]
+WARNING: [Synth 8-5788] Register handle_finish_1_reg in module next is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/next.v:720]
+INFO: [Synth 8-6155] done synthesizing module 'next' (4#1) [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/next.v:1]
+INFO: [Synth 8-6157] synthesizing module 'decide' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:42]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:68]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:94]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:120]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:146]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:172]
+WARNING: [Synth 8-567] referenced signal 'j' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'game0' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'game1' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'game2' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'game3' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'game4' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'game5' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'game6' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'game7' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'game8' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'game9' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'game10' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'game11' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'game12' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'game13' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'game14' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'game15' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'game16' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'game17' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'game18' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'game19' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'game20' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'game21' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'game22' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'game23' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'handle' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'blocks' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'j_1' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'i' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'j1' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'j0' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'j_2' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+WARNING: [Synth 8-567] referenced signal 'j2' should be on the sensitivity list [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'decide' (5#1) [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:23]
+WARNING: [Synth 8-689] width (2) of port connection 'clk' does not match port width (1) of module 'decide' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:145]
+INFO: [Synth 8-6157] synthesizing module 'remove' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/remove.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/remove.v:53]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/remove.v:79]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/remove.v:105]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/remove.v:131]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/remove.v:171]
+INFO: [Synth 8-6155] done synthesizing module 'remove' (6#1) [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/remove.v:1]
+INFO: [Synth 8-6157] synthesizing module 'turn_to_rgb' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/turn_to_rgb.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'turn_to_rgb' (7#1) [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/turn_to_rgb.v:23]
+INFO: [Synth 8-6157] synthesizing module 'rgb2dvi_0' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.runs/synth_1/.Xil/Vivado-1052-DESKTOP-4VGS7IU/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rgb2dvi_0' (8#1) [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.runs/synth_1/.Xil/Vivado-1052-DESKTOP-4VGS7IU/realtime/rgb2dvi_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'Driver_HDMI' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/Driver_HDMI.v:3]
+	Parameter H_ACTIVE_1280_720 bound to: 16'b0000010100000000 
+	Parameter H_FP_1280_720 bound to: 16'b0000000001101110 
+	Parameter H_SYNC_1280_720 bound to: 16'b0000000000101000 
+	Parameter H_BP_1280_720 bound to: 16'b0000000011011100 
+	Parameter V_ACTIVE_1280_720 bound to: 16'b0000001011010000 
+	Parameter V_FP_1280_720 bound to: 16'b0000000000000101 
+	Parameter V_SYNC_1280_720 bound to: 16'b0000000000000101 
+	Parameter V_BP_1280_720 bound to: 16'b0000000000010100 
+	Parameter H_TOTAL_1280_720 bound to: 16'b0000011001110010 
+	Parameter V_TOTAL_1280_720 bound to: 16'b0000001011101110 
+	Parameter H_ACTIVE_1920_1080 bound to: 16'b0000011110000000 
+	Parameter H_FP_1920_1080 bound to: 16'b0000000001011000 
+	Parameter H_SYNC_1920_1080 bound to: 16'b0000000000101100 
+	Parameter H_BP_1920_1080 bound to: 16'b0000000010010100 
+	Parameter V_ACTIVE_1920_1080 bound to: 16'b0000010000111000 
+	Parameter V_FP_1920_1080 bound to: 16'b0000000000000100 
+	Parameter V_SYNC_1920_1080 bound to: 16'b0000000000000101 
+	Parameter V_BP_1920_1080 bound to: 16'b0000000000100100 
+	Parameter H_TOTAL_1920_1080 bound to: 16'b0000100010011000 
+	Parameter V_TOTAL_1920_1080 bound to: 16'b0000010001100101 
+INFO: [Synth 8-6155] done synthesizing module 'Driver_HDMI' (9#1) [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/Driver_HDMI.v:3]
+WARNING: [Synth 8-6014] Unused sequential element gamestart_reg was removed.  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:104]
+INFO: [Synth 8-4471] merging register 'game2_reg[9:0]' into 'game1_reg[9:0]' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:121]
+INFO: [Synth 8-4471] merging register 'game3_reg[9:0]' into 'game1_reg[9:0]' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:121]
+INFO: [Synth 8-4471] merging register 'game4_reg[9:0]' into 'game1_reg[9:0]' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:121]
+INFO: [Synth 8-4471] merging register 'game5_reg[9:0]' into 'game1_reg[9:0]' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:122]
+INFO: [Synth 8-4471] merging register 'game6_reg[9:0]' into 'game1_reg[9:0]' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:122]
+INFO: [Synth 8-4471] merging register 'game7_reg[9:0]' into 'game1_reg[9:0]' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:122]
+INFO: [Synth 8-4471] merging register 'game8_reg[9:0]' into 'game1_reg[9:0]' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:122]
+INFO: [Synth 8-4471] merging register 'game9_reg[9:0]' into 'game1_reg[9:0]' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:122]
+INFO: [Synth 8-4471] merging register 'game10_reg[9:0]' into 'game1_reg[9:0]' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:123]
+INFO: [Synth 8-4471] merging register 'game11_reg[9:0]' into 'game1_reg[9:0]' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:123]
+INFO: [Synth 8-4471] merging register 'game12_reg[9:0]' into 'game1_reg[9:0]' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:123]
+INFO: [Synth 8-4471] merging register 'game13_reg[9:0]' into 'game1_reg[9:0]' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:123]
+INFO: [Synth 8-4471] merging register 'game14_reg[9:0]' into 'game1_reg[9:0]' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:123]
+INFO: [Synth 8-4471] merging register 'game15_reg[9:0]' into 'game1_reg[9:0]' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:124]
+INFO: [Synth 8-4471] merging register 'game16_reg[9:0]' into 'game1_reg[9:0]' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:124]
+INFO: [Synth 8-4471] merging register 'game17_reg[9:0]' into 'game1_reg[9:0]' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:124]
+INFO: [Synth 8-4471] merging register 'game18_reg[9:0]' into 'game1_reg[9:0]' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:124]
+INFO: [Synth 8-4471] merging register 'game19_reg[9:0]' into 'game1_reg[9:0]' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:124]
+INFO: [Synth 8-4471] merging register 'game20_reg[9:0]' into 'game1_reg[9:0]' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:125]
+INFO: [Synth 8-4471] merging register 'game21_reg[9:0]' into 'game1_reg[9:0]' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:125]
+INFO: [Synth 8-4471] merging register 'game22_reg[9:0]' into 'game1_reg[9:0]' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:125]
+WARNING: [Synth 8-6014] Unused sequential element game2_reg was removed.  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:121]
+WARNING: [Synth 8-6014] Unused sequential element game3_reg was removed.  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:121]
+WARNING: [Synth 8-6014] Unused sequential element game4_reg was removed.  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:121]
+WARNING: [Synth 8-6014] Unused sequential element game5_reg was removed.  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:122]
+WARNING: [Synth 8-6014] Unused sequential element game6_reg was removed.  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:122]
+WARNING: [Synth 8-6014] Unused sequential element game7_reg was removed.  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:122]
+WARNING: [Synth 8-6014] Unused sequential element game8_reg was removed.  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:122]
+WARNING: [Synth 8-6014] Unused sequential element game9_reg was removed.  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:122]
+WARNING: [Synth 8-6014] Unused sequential element game10_reg was removed.  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:123]
+WARNING: [Synth 8-6014] Unused sequential element game11_reg was removed.  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:123]
+WARNING: [Synth 8-6014] Unused sequential element game12_reg was removed.  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:123]
+WARNING: [Synth 8-6014] Unused sequential element game13_reg was removed.  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:123]
+WARNING: [Synth 8-6014] Unused sequential element game14_reg was removed.  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:123]
+WARNING: [Synth 8-6014] Unused sequential element game15_reg was removed.  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:124]
+WARNING: [Synth 8-6014] Unused sequential element game16_reg was removed.  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:124]
+WARNING: [Synth 8-6014] Unused sequential element game17_reg was removed.  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:124]
+WARNING: [Synth 8-6014] Unused sequential element game18_reg was removed.  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:124]
+WARNING: [Synth 8-6014] Unused sequential element game19_reg was removed.  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:124]
+WARNING: [Synth 8-6014] Unused sequential element game20_reg was removed.  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:125]
+WARNING: [Synth 8-6014] Unused sequential element game21_reg was removed.  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:125]
+WARNING: [Synth 8-6014] Unused sequential element game22_reg was removed.  [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'lab_10' (10#1) [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:23]
+WARNING: [Synth 8-3331] design turn_to_rgb has unconnected port clk
+WARNING: [Synth 8-3331] design turn_to_rgb has unconnected port RGB_VDE
+WARNING: [Synth 8-3331] design remove has unconnected port i[3]
+WARNING: [Synth 8-3331] design remove has unconnected port i[2]
+WARNING: [Synth 8-3331] design remove has unconnected port i[1]
+WARNING: [Synth 8-3331] design remove has unconnected port i[0]
+WARNING: [Synth 8-3331] design decide has unconnected port clk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 581.746 ; gain = 217.383
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 581.746 ; gain = 217.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 581.746 ; gain = 217.383
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'rgb2dvi'
+Finished Parsing XDC File [e:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc] for cell 'rgb2dvi'
+Parsing XDC File [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/constrs_1/new/system.xdc]
+Finished Parsing XDC File [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/constrs_1/new/system.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/constrs_1/new/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab_10_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/lab_10_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 876.133 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 876.133 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 876.133 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 876.133 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 876.176 ; gain = 511.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s15ftgb196-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 876.176 ; gain = 511.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Clk_N. (constraint file  e:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 1).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Clk_N. (constraint file  e:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 2).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Clk_P. (constraint file  e:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Clk_P. (constraint file  e:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[0]. (constraint file  e:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[0]. (constraint file  e:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 6).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[1]. (constraint file  e:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 7).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[1]. (constraint file  e:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 8).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[2]. (constraint file  e:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 9).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_N[2]. (constraint file  e:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 10).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[0]. (constraint file  e:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 11).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[0]. (constraint file  e:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 12).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[1]. (constraint file  e:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 13).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[1]. (constraint file  e:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 14).
+Applied set_property IO_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[2]. (constraint file  e:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 15).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for TMDS_Tx_Data_P[2]. (constraint file  e:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/ip/rgb2dvi_0_1/rgb2dvi_0/rgb2dvi_0_in_context.xdc, line 16).
+Applied set_property DONT_TOUCH = true for rgb2dvi. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 876.176 ; gain = 511.813
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "ratate_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "j_2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "j_1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "j1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "j2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "j3" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "j_2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "j_1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "j1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "j2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "j_1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "j1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "j2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "num1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "num2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "num3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "num4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "handle_finish_1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "j_1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "j1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "j2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "num1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "num2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "num3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "num4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "handle_finish_1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "j0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "green" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "green" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "green" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "green" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "green" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "green" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "green" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "green" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "green" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "green" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "green" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "green" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "green" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "green" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "green" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "green" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "green" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "green" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "green" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "green" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "green" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "red" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Common 17-14] Message 'Synth 8-5544' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-327] inferring latch for variable 'j0_reg' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:95]
+WARNING: [Synth 8-327] inferring latch for variable 'j1_reg' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:121]
+WARNING: [Synth 8-327] inferring latch for variable 'j_1_reg' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:69]
+WARNING: [Synth 8-327] inferring latch for variable 'j2_reg' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:147]
+WARNING: [Synth 8-327] inferring latch for variable 'j_2_reg' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/decide.v:43]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 876.176 ; gain = 511.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |next          |           2|     12936|
+|2     |lab_10__GC0   |           1|     26727|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 10    
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     26 Bit       Adders := 1     
+	   5 Input     12 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 13    
+	   2 Input      4 Bit       Adders := 14    
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 2     
+	               10 Bit    Registers := 115   
+	                5 Bit    Registers := 16    
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 15    
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	  25 Input     10 Bit        Muxes := 10    
+	   4 Input     10 Bit        Muxes := 20    
+	   2 Input     10 Bit        Muxes := 175   
+	   6 Input     10 Bit        Muxes := 26    
+	   7 Input     10 Bit        Muxes := 6     
+	  12 Input     10 Bit        Muxes := 4     
+	  15 Input     10 Bit        Muxes := 2     
+	  11 Input     10 Bit        Muxes := 2     
+	  14 Input     10 Bit        Muxes := 2     
+	   5 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 486   
+	   3 Input      8 Bit        Muxes := 20    
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	  25 Input      5 Bit        Muxes := 10    
+	   2 Input      5 Bit        Muxes := 42    
+	  20 Input      4 Bit        Muxes := 10    
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	  20 Input      3 Bit        Muxes := 34    
+	  20 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 3     
+	  25 Input      1 Bit        Muxes := 21    
+	   2 Input      1 Bit        Muxes := 22    
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module lab_10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module next 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 3     
++---Registers : 
+	               10 Bit    Registers := 30    
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  25 Input     10 Bit        Muxes := 3     
+	   4 Input     10 Bit        Muxes := 10    
+	   2 Input     10 Bit        Muxes := 77    
+	   6 Input     10 Bit        Muxes := 13    
+	   7 Input     10 Bit        Muxes := 3     
+	  12 Input     10 Bit        Muxes := 2     
+	  15 Input     10 Bit        Muxes := 1     
+	  11 Input     10 Bit        Muxes := 1     
+	  14 Input     10 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	  25 Input      5 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 20    
+	  20 Input      4 Bit        Muxes := 5     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  20 Input      3 Bit        Muxes := 17    
+	  20 Input      2 Bit        Muxes := 2     
+	  25 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 4     
+Module clockdown 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     26 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module key 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module newblock 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module decide 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 5     
+	   2 Input      3 Bit       Adders := 2     
++---Muxes : 
+	  25 Input     10 Bit        Muxes := 2     
+	  25 Input      5 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+	  25 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 2     
+Module remove 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 3     
++---Registers : 
+	               10 Bit    Registers := 52    
+	                5 Bit    Registers := 5     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  25 Input     10 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 21    
+	  25 Input      5 Bit        Muxes := 2     
+	  25 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 6     
+Module turn_to_rgb 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 486   
+	   3 Input      8 Bit        Muxes := 20    
+Module Driver_HDMI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 5     
+	   3 Input     32 Bit       Adders := 1     
+	   5 Input     12 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   3 Input      7 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 20 (col length:20)
+BRAMs: 20 (col length: RAMB18 20 RAMB36 10)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "j1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "j2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "j3" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "ratate_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "j1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "j2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "j2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "num4" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "j1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "num3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "num2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "num1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'i_0/remove1/num4_reg[4]' (FDRE) to 'i_0/remove1/num4_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/remove1/num4_reg[3]' (FDRE) to 'i_0/remove1/num4_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/remove1/num4_reg[2]' (FDRE) to 'i_0/remove1/num4_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\remove1/num4_reg[1] )
+INFO: [Synth 8-3886] merging instance 'i_0/remove1/num3_reg[4]' (FDRE) to 'i_0/remove1/num3_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/remove1/num3_reg[3]' (FDRE) to 'i_0/remove1/num3_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/remove1/num3_reg[2]' (FDRE) to 'i_0/remove1/num3_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\remove1/num3_reg[1] )
+INFO: [Synth 8-3886] merging instance 'i_0/remove1/num2_reg[4]' (FDRE) to 'i_0/remove1/num2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/remove1/num2_reg[3]' (FDRE) to 'i_0/remove1/num2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/remove1/num2_reg[2]' (FDRE) to 'i_0/remove1/num2_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\remove1/num2_reg[1] )
+INFO: [Synth 8-3886] merging instance 'i_0/remove1/num1_reg[4]' (FDRE) to 'i_0/remove1/num1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'i_0/remove1/num1_reg[3]' (FDRE) to 'i_0/remove1/num1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'i_0/remove1/num1_reg[2]' (FDRE) to 'i_0/remove1/num1_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\remove1/num1_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\key1/right_out_reg )
+INFO: [Synth 8-3886] merging instance 'i_0/game23_reg[1]' (FD) to 'i_0/game23_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game23_reg[2]' (FD) to 'i_0/game23_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game23_reg[3]' (FD) to 'i_0/game23_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game23_reg[4]' (FD) to 'i_0/game23_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game23_reg[5]' (FD) to 'i_0/game23_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game23_reg[6]' (FD) to 'i_0/game23_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game23_reg[7]' (FD) to 'i_0/game23_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game23_reg[8]' (FD) to 'i_0/game23_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game23_reg[9]' (FD) to 'i_0/game1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game1_reg[0]' (FD) to 'i_0/game1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game1_reg[1]' (FD) to 'i_0/game1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game1_reg[2]' (FD) to 'i_0/game1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game1_reg[3]' (FD) to 'i_0/game1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game1_reg[4]' (FD) to 'i_0/game1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game1_reg[5]' (FD) to 'i_0/game1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game1_reg[6]' (FD) to 'i_0/game1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game1_reg[7]' (FD) to 'i_0/game1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game1_reg[8]' (FD) to 'i_0/game1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game1_reg[9]' (FD) to 'i_0/game0_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game0_reg[1]' (FD) to 'i_0/game0_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game0_reg[2]' (FD) to 'i_0/game0_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game0_reg[3]' (FD) to 'i_0/game0_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game0_reg[4]' (FD) to 'i_0/game0_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game0_reg[5]' (FD) to 'i_0/game0_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game0_reg[6]' (FD) to 'i_0/game0_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game0_reg[7]' (FD) to 'i_0/game0_reg[9]'
+INFO: [Synth 8-3886] merging instance 'i_0/game0_reg[8]' (FD) to 'i_0/game0_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\game0_reg[9] )
+INFO: [Synth 8-3886] merging instance 'i_0/handle_reg[1]' (FD) to 'i_0/handle_reg[0]'
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin handle_finish with 1st driver pin 'i_0/remove1/handle_finish_reg/Q' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/remove.v:466]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin handle_finish with 2nd driver pin 'GND' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/remove.v:466]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net handle_finish is connected to at least one constant driver which has been preserved, other driver is ignored [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/remove.v:466]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'i_0/start_reg/Q' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:106]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:106]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.srcs/sources_1/new/lab_10.v:106]
+INFO: [Synth 8-3886] merging instance 'next1/j3_reg[0]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j3_reg[0]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j3_reg[0]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j3_reg[1]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j3_reg[1]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j3_reg[1]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j3_reg[2]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j3_reg[2]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j3_reg[2]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j3_reg[3]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j3_reg[3]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j3_reg[3]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j3_reg[4]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j3_reg[4]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j3_reg[4]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j3_reg[5]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j3_reg[5]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j3_reg[5]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j3_reg[6]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j3_reg[6]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j3_reg[6]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j3_reg[7]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j3_reg[7]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j3_reg[7]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j3_reg[8]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j3_reg[8]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j3_reg[8]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j3_reg[9]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j3_reg[9]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j3_reg[9]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j2_reg[0]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j2_reg[0]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j2_reg[0]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j2_reg[1]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j2_reg[1]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j2_reg[1]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j2_reg[2]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j2_reg[2]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j2_reg[2]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j2_reg[3]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j2_reg[3]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j2_reg[3]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j2_reg[4]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j2_reg[4]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j2_reg[4]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j2_reg[5]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j2_reg[5]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j2_reg[5]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j2_reg[6]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j2_reg[6]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j2_reg[6]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j2_reg[7]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j2_reg[7]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j2_reg[7]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j2_reg[8]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j2_reg[8]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j2_reg[8]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j2_reg[9]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j2_reg[9]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j2_reg[9]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j1_reg[0]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j1_reg[0]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j1_reg[0]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j1_reg[1]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j1_reg[1]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j1_reg[1]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j1_reg[2]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j1_reg[2]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j1_reg[2]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j1_reg[3]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j1_reg[3]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j1_reg[3]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j1_reg[4]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j1_reg[4]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j1_reg[4]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j1_reg[5]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j1_reg[5]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j1_reg[5]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j1_reg[6]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j1_reg[6]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j1_reg[6]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j1_reg[7]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j1_reg[7]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j1_reg[7]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j1_reg[8]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j1_reg[8]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j1_reg[8]_LDC )
+INFO: [Synth 8-3886] merging instance 'next1/j1_reg[9]_P' (FDPE) to 'next1/j_1_reg[0]_P'
+INFO: [Synth 8-3886] merging instance 'next1/j1_reg[9]_C' (FDCE) to 'next1/j_1_reg[0]_C'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j1_reg[9]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j0_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j0_reg[1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j0_reg[2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j0_reg[3]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j0_reg[4]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j0_reg[5]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j0_reg[6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j0_reg[7]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j0_reg[8]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j0_reg[9]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j_1_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j_1_reg[1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j_1_reg[2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j_1_reg[3]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j_1_reg[4]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j_1_reg[5]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j_1_reg[6]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j_1_reg[7]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j_1_reg[8]_LDC )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (next1/\j_1_reg[9]_P )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (next1/\j_1_reg[9]_C )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\j_1_reg[9]_LDC )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (next1/\j_2_reg[9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\new_j_1_reg[0]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\new_j_1_reg[1]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\new_j_1_reg[2]_P )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\new_j_1_reg[2]_C )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\new_j_1_reg[2]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\new_j_1_reg[3]_LDC )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (next1/\new_j_1_reg[4]_P )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (next1/\new_j_1_reg[4]_C )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\new_j_1_reg[4]_LDC )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\new_i_1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (next1/\game0_1_reg[9] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (next1/\new_i_1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (next1/\game0_1_reg[9] )
+WARNING: [Synth 8-3332] Sequential element (j1_reg[9]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j1_reg[8]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j1_reg[7]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j1_reg[6]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j1_reg[5]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j1_reg[4]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j1_reg[3]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j1_reg[2]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j1_reg[1]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j1_reg[0]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j0_reg[9]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j0_reg[8]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j0_reg[7]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j0_reg[6]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j0_reg[5]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j0_reg[4]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j0_reg[3]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j0_reg[2]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j0_reg[1]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j0_reg[0]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j2_reg[9]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j2_reg[8]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j2_reg[7]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j2_reg[6]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j2_reg[5]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j2_reg[4]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j2_reg[3]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j2_reg[2]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j2_reg[1]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j2_reg[0]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j3_reg[9]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j3_reg[8]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j3_reg[7]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j3_reg[6]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j3_reg[5]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j3_reg[4]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j3_reg[3]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j3_reg[2]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j3_reg[1]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j3_reg[0]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (handle_finish_1_reg_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (handle_finish_1_reg_C) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (handle_finish_1_reg_P) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (new_j_1_reg[4]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (new_j_1_reg[4]_C) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (new_j_1_reg[4]_P) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (new_j_1_reg[3]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (new_j_1_reg[2]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (new_j_1_reg[2]_C) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (new_j_1_reg[2]_P) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (new_j_1_reg[1]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (new_j_1_reg[0]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j_1_reg[9]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j_1_reg[9]_C) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j_1_reg[9]_P) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j_1_reg[8]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j_1_reg[7]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j_1_reg[6]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j_1_reg[5]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j_1_reg[4]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j_1_reg[3]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j_1_reg[2]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j_1_reg[1]_LDC) is unused and will be removed from module next.
+WARNING: [Synth 8-3332] Sequential element (j_1_reg[0]_LDC) is unused and will be removed from module next.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/over_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j_2_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j_2_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j_2_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j_2_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j_2_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j_2_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j_2_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j_2_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j_2_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j_2_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j0_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j0_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j0_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j0_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j0_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j0_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j0_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j0_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j0_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j0_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j1_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j1_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j1_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j1_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\decide1/j1_reg[4] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (j1_reg[9]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j1_reg[8]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j1_reg[7]_C) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j1_reg[3]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j1_reg[2]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j1_reg[1]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j1_reg[0]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j0_reg[9]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j0_reg[8]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j0_reg[5]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j0_reg[3]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j0_reg[2]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j0_reg[1]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j0_reg[0]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j2_reg[9]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j2_reg[8]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j2_reg[7]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j2_reg[6]_C) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j2_reg[5]_C) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j2_reg[4]_C) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j2_reg[3]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j2_reg[2]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j2_reg[1]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j2_reg[0]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j3_reg[9]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j3_reg[8]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j3_reg[7]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j3_reg[6]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j3_reg[5]_C) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j3_reg[4]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j3_reg[3]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j3_reg[2]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j3_reg[1]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (j3_reg[0]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (new_j_1_reg[4]_LDC) is unused and will be removed from module next__1.
+WARNING: [Synth 8-3332] Sequential element (new_j_1_reg[4]_C) is unused and will be removed from module next__1.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:03 ; elapsed = 00:02:05 . Memory (MB): peak = 1212.055 ; gain = 847.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |next          |           1|        12|
+|2     |lab_10__GC0   |           1|       694|
+|3     |next__1       |           1|       530|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:10 ; elapsed = 00:02:12 . Memory (MB): peak = 1212.055 ; gain = 847.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:10 ; elapsed = 00:02:13 . Memory (MB): peak = 1212.055 ; gain = 847.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |next          |           1|        12|
+|2     |lab_10__GC0   |           1|       694|
+|3     |next__1       |           1|       530|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:11 ; elapsed = 00:02:13 . Memory (MB): peak = 1212.055 ; gain = 847.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:12 ; elapsed = 00:02:14 . Memory (MB): peak = 1212.055 ; gain = 847.691
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:12 ; elapsed = 00:02:14 . Memory (MB): peak = 1212.055 ; gain = 847.691
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:12 ; elapsed = 00:02:14 . Memory (MB): peak = 1212.055 ; gain = 847.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:12 ; elapsed = 00:02:14 . Memory (MB): peak = 1212.055 ; gain = 847.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:12 ; elapsed = 00:02:14 . Memory (MB): peak = 1212.055 ; gain = 847.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:12 ; elapsed = 00:02:14 . Memory (MB): peak = 1212.055 ; gain = 847.691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|lab_10      | remove1/game0_1_reg[0]  | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|lab_10      | remove1/game7_1_reg[6]  | 3      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|lab_10      | remove1/game23_1_reg[0] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |rgb2dvi_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |rgb2dvi_0 |     1|
+|2     |BUFG      |     1|
+|3     |CARRY4    |    39|
+|4     |LUT1      |    22|
+|5     |LUT2      |    99|
+|6     |LUT3      |    44|
+|7     |LUT4      |    15|
+|8     |LUT5      |    23|
+|9     |LUT6      |    45|
+|10    |SRL16E    |     4|
+|11    |FDPE      |     2|
+|12    |FDRE      |    86|
+|13    |LDC       |     2|
+|14    |IBUF      |     1|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------+------------+------+
+|      |Instance       |Module      |Cells |
++------+---------------+------------+------+
+|1     |top            |            |   391|
+|2     |  Driver_HDMI0 |Driver_HDMI |   277|
+|3     |  clockdown1   |clockdown   |    85|
+|4     |  next2        |next        |     9|
+|5     |  remove1      |remove      |     8|
++------+---------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:12 ; elapsed = 00:02:14 . Memory (MB): peak = 1212.055 ; gain = 847.691
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 6 critical warnings and 150 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:58 ; elapsed = 00:02:09 . Memory (MB): peak = 1212.055 ; gain = 553.262
+Synthesis Optimization Complete : Time (s): cpu = 00:02:12 ; elapsed = 00:02:14 . Memory (MB): peak = 1212.055 ; gain = 847.691
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 41 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1212.055 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LDC => LDCE: 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+421 Infos, 180 Warnings, 6 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:13 ; elapsed = 00:02:17 . Memory (MB): peak = 1212.055 ; gain = 859.531
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1212.055 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/UNIVERSITY/alltext/fpga_teris/demo0/lab_10.runs/synth_1/lab_10.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file lab_10_utilization_synth.rpt -pb lab_10_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Aug  2 10:34:42 2020...
