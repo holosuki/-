@@ -22,6 +22,7 @@
 
 module key(
     input clk,
+    input rotate,
     input right,
     input left,
     output reg ratate_out,
@@ -33,7 +34,7 @@ module key(
     reg [4:0] clk2=0;
     always@(posedge clk)
     begin
-        if((right==1)&&(left==1))
+        if(rotate==1)
         begin
             if(clk0==5'd20) clk0<=clk0;
             else clk0<=clk0+1;
@@ -48,7 +49,7 @@ module key(
     end
     always@(posedge clk)
     begin
-        if((right==1)&&(left==0))
+        if(right==1)
         begin
             if(clk1==5'd20) clk1<=clk1;
             else clk1<=clk1+1;
@@ -63,7 +64,7 @@ module key(
     end
     always@(posedge clk)
     begin
-        if((right==0)&&(left==1))
+        if(left==1)
         begin
             if(clk2==5'd20) clk2<=clk2;
             else clk2<=clk2+1;

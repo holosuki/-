@@ -29,7 +29,7 @@ module clockdown(
     always@(clk)
     begin
         clkout_able<=clkout_able+1;
-        if(clkout_able==n-1)
+        if(clkout_able>=n-1)
         begin
             clkout<=1;
             clkout_able<=0;

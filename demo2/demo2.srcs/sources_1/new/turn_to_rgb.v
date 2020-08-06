@@ -40,7 +40,7 @@ module turn_to_rgb(
         game23<=num[239:230];
         n<=0;
         if((CounterX>=720)&&(CounterX<765)) n<=1;
-        else if((CounterX>=1260)&&(CounterX<=1305)) n<=1;
+        else if((CounterX>=1215)&&(CounterX<=1260)) n<=1;
         else if((CounterX>=(765))&&(CounterX<(810)))
         begin
             if((CounterY>=0)&&(CounterY<45))
@@ -437,7 +437,7 @@ module turn_to_rgb(
                 if(game23[6]==1) n<=2;
             end
         end
-        else if((CounterX>=(990))&&(CounterX<(1035)))
+        else if((CounterX>=(945))&&(CounterX<(990)))
         begin
             if((CounterY>=0)&&(CounterY<45))
             begin
@@ -536,7 +536,7 @@ module turn_to_rgb(
                 if(game23[5]==1) n<=2;
             end
         end
-        else if((CounterX>=(1035))&&(CounterX<(1080)))
+        else if((CounterX>=(990))&&(CounterX<(1035)))
         begin
             if((CounterY>=0)&&(CounterY<45))
             begin
@@ -635,7 +635,7 @@ module turn_to_rgb(
                 if(game23[4]==1) n<=2;
             end
         end
-        else if((CounterX>=(1080))&&(CounterX<(1125)))
+        else if((CounterX>=(1035))&&(CounterX<(1080)))
         begin
             if((CounterY>=0)&&(CounterY<45))
             begin
@@ -734,7 +734,7 @@ module turn_to_rgb(
                 if(game23[3]==1) n<=2;
             end
         end
-        else if((CounterX>=(1125))&&(CounterX<(1170)))
+        else if((CounterX>=(1080))&&(CounterX<(1125)))
         begin
             if((CounterY>=0)&&(CounterY<45))
             begin
@@ -833,7 +833,7 @@ module turn_to_rgb(
                 if(game23[2]==1) n<=2;
             end
         end
-        else if((CounterX>=(1170))&&(CounterX<(1215)))
+        else if((CounterX>=(1125))&&(CounterX<(1170)))
         begin
             if((CounterY>=0)&&(CounterY<45))
             begin
@@ -932,7 +932,7 @@ module turn_to_rgb(
                 if(game23[1]==1) n<=2;
             end
         end
-        else if((CounterX>=(1215))&&(CounterX<(1260)))
+        else if((CounterX>=(1170))&&(CounterX<(1215)))
         begin
             if((CounterY>=0)&&(CounterY<45))
             begin

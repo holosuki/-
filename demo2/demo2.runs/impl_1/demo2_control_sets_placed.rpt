@@ -1,0 +1,82 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Aug  6 16:32:35 2020
+| Host         : DESKTOP-4VGS7IU running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file demo2_control_sets_placed.rpt
+| Design       : demo2
+| Device       : xc7s15
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    13 |
+| Unused register locations in slices containing registers |    51 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      4 |            2 |
+|      5 |            4 |
+|     10 |            1 |
+|     12 |            3 |
+|    16+ |            2 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             177 |           49 |
+| No           | No                    | Yes                    |               6 |            2 |
+| No           | Yes                   | No                     |              57 |           21 |
+| Yes          | No                    | No                     |              45 |           15 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-----------------------------------+-------------------------------------------------------------------------------+------------------+----------------+
+|  Clock Signal  |           Enable Signal           |                                Set/Reset Signal                               | Slice Load Count | Bel Load Count |
++----------------+-----------------------------------+-------------------------------------------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                                   | rgb2dvi/U0/ClockGenInternal.ClockGenX/in0                                     |                1 |              2 |
+|  clk_IBUF_BUFG |                                   | rgb2dvi/U0/ClockGenInternal.ClockGenX/LockLostReset/SyncAsyncx/oSyncStages[1] |                1 |              4 |
+|  clk_IBUF_BUFG | game1/FSM_onehot_BLOCK[3]_i_1_n_0 |                                                                               |                1 |              4 |
+|  clk_IBUF_BUFG |                                   | key1/clk2[4]_i_1_n_0                                                          |                1 |              5 |
+|  clk_IBUF_BUFG |                                   | key1/clk0[4]_i_1_n_0                                                          |                1 |              5 |
+|  clk_IBUF_BUFG |                                   | key1/clk1[4]_i_1_n_0                                                          |                1 |              5 |
+|  clk_IBUF_BUFG | game1/m[4]_i_1_n_0                |                                                                               |                3 |              5 |
+|  clk_IBUF_BUFG |                                   | rgb2dvi/U0/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__1_n_0              |                3 |             10 |
+|  clk_IBUF_BUFG | Driver_HDMI0/Set_X0_carry__0_n_2  |                                                                               |                4 |             12 |
+|  clk_IBUF_BUFG | Driver_HDMI0/Set_Y0_carry__0_n_2  |                                                                               |                4 |             12 |
+|  clk_IBUF_BUFG | Driver_HDMI0/VSync_Cnt0           |                                                                               |                3 |             12 |
+|  clk_IBUF_BUFG |                                   | rgb2dvi/U0/DataEncoders[0].DataEncoder/SR[0]                                  |               15 |             32 |
+|  clk_IBUF_BUFG |                                   |                                                                               |               49 |            177 |
++----------------+-----------------------------------+-------------------------------------------------------------------------------+------------------+----------------+
+
+

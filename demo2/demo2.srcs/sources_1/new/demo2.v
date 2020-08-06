@@ -22,6 +22,7 @@
 
 module demo2( 
     input clk, 
+    input rotate,
     input right,
     input left,
     output TMDS_Tx_Clk_N, 
@@ -53,6 +54,7 @@ module demo2(
     wire left_out;
     key key1(
         .clk(clk),
+        .rotate(rotate),
         .right(right),
         .left(left),
         .ratate_out(rotate_out),

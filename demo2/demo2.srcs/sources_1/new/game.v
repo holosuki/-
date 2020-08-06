@@ -163,7 +163,7 @@ module game(
             end
         if(LMOVE_ABLE) begin m<=m-1;LMOVE_ABLE<=0; end
         if(RMOVE_ABLE) begin m<=m+1;RMOVE_ABLE<=0; end
-            if(clk0)
+            /*if(clk0)
             begin
                 case (BLOCK)
                 5'd0: if (n<=21) begin if (!(R[n+2][m] | R[n+2][m+1])) DOWN_ABLE<=1; else begin DOWN_ABLE<=0;next<=1;end end
@@ -189,7 +189,7 @@ module game(
                 endcase
             end
         if(DOWN_ABLE) begin n<=n+1;DOWN_ABLE<=0; end
-        if(next) begin BLOCK<=random;n<=6'd5;m<=5'd5;next<=0; end
+        if(next) begin BLOCK<=random;n<=6'd5;m<=5'd5;next<=0; end*/
         case (BLOCK)
             5'd0: begin R[n][m]<=1;R[n][m+1]<=1;R[n+1][m]<=1;R[n+1][m+1]<=1;end
             5'd1: begin R[n-1][m]<=1;R[n][m]<=1;R[n+1][m]<=1;R[n+1][m+1]<=1;end

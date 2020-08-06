@@ -4,9 +4,11 @@ create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports { c
 
 set_property PACKAGE_PIN  C3 [get_ports {right}]
 set_property PACKAGE_PIN  M4 [get_ports {left}]
+set_property PACKAGE_PIN  D14 [get_ports {rotate}]
 
 set_property IOSTANDARD LVCMOS33 [get_ports {right}]
 set_property IOSTANDARD LVCMOS33 [get_ports {left}]
+set_property IOSTANDARD LVCMOS33 [get_ports {rotate}]
 
 ##HDMI Tx
 set_property -dict { PACKAGE_PIN F4   IOSTANDARD TMDS_33  } [get_ports { TMDS_Tx_Clk_N }]; #IO_L11N_T1_SRCC_35 Sch=hdmi_tx_clk_n
