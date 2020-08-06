@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../demo2.srcs/sources_1/new/Driver_HDMI.v" \
+"../../../../demo2.srcs/sources_1/new/clockdown.v" \
+"../../../../demo2.srcs/sources_1/new/demo2.v" \
+"../../../../demo2.srcs/sources_1/new/game.v" \
+"../../../../demo2.srcs/sources_1/new/key.v" \
+"../../../../demo2.srcs/sources_1/new/turn_to_rgb.v" \
+"../../../../demo2.srcs/sim_1/new/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
